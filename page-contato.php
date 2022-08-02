@@ -3,12 +3,9 @@
 get_header();
 ?>
 
-		<section class="introducao-interna interna_contato">
-			<div class="container">
-				<h1>Contato</h1>
-				<p>tire suas dúvidas com a gente</p>
-			</div>
-		</section>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+		<?php include(TEMPLATEPATH . "/inc/intro.php"); ?>
 
 		<section class="contato container animar-interno">
 			<form action="enviar.php" method="post" name="form" class="formphp contato_form grid-8">
@@ -32,10 +29,10 @@ get_header();
 
 			<div class="contato_dados grid-8">
 				<h3>Dados</h3>
-				<span>+55 21 9999-9999</span>
-				<span>orcamento@bikcraft.com</span>
-				<span>Rua Ali Perto - Botafogo</span>
-				<span>Rio de Janeiro - RJ - Brasil</span>
+				<span>79 9 9959-1921</span>
+				<span>jonesbass.tb@gmail.com</span>
+				<span>Rua Raimundo José dos Santos, nº 1035</span>
+				<span>Tobias Barreto - Sergipe</span>
 				<h3>Redes Sociais</h3>
 				<ul>
 					<li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.png" alt="Facebook Bikcraft"></a></li>
@@ -48,5 +45,6 @@ get_header();
 		<section class="container contato_mapa">
 			<a href="http://google.com" target="_blank" class="grid-16"><img src="img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
 		</section>
-
-		<?php get_footer(); ?>
+		
+<?php endwhile; else : endif; ?>
+<?php get_footer(); ?>
