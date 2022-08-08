@@ -97,6 +97,6 @@ get_header();
 				</div>
 			</div>
 		</section>
-
-		<?php endwhile; else : endif; ?>
+		<?php endwhile; else: endif; ?>
+		
 		<?php get_footer(); ?>

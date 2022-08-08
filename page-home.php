@@ -48,12 +48,11 @@
 
 			<div class="call">
 				<p><?php the_field('chamada_produtos'); ?></p>
-				<a href="/bikecraft/produtos/" class="btn btn-preto">Produtos</a>
+				<a href="/bikcraft/produtos/" class="btn btn-preto">Produtos</a>
 			</div>
 
 		</section>
 		<!-- Fecha Produtos -->
-
 		<section class="portfolio">
 			<div class="container">
 				<h2 class="subtitulo">Portfólio</h2>
@@ -61,12 +60,12 @@
 
 				<div class="call">
 					<p><?php the_field('chamada_portifolio'); ?></p>
-					<a href="/bikecraft/portifolio/" class="btn">Portfólio</a>
+					<a href="/bikcraft/portifolio/" class="btn">Portfólio</a>
 				</div>
 			</div>
 		</section>
 
 		<?php include(TEMPLATEPATH . "/inc/qualidade.php"); ?>
+	<?php endwhile; else: endif; ?>
 
-		<?php endwhile; else : endif; ?>
 		<?php get_footer(); ?>
