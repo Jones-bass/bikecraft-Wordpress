@@ -58,10 +58,6 @@
 				<h2 class="subtitulo">Portfólio</h2>
 				<?php include(TEMPLATEPATH . "/inc/clientPortifolio.php"); ?>
 
-				<div class="call">
-					<p><?php the_field('chamada_portifolio'); ?></p>
-					<a href="/bikcraft/portifolio/" class="btn">Portfólio</a>
-				</div>
 			</div>
 		</section>
 
