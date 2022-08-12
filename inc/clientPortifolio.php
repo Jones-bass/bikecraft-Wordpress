@@ -4,7 +4,7 @@
 					
 					<?php if(have_rows('item_portifolio', $portifolio)): while(have_rows('item_portifolio', $portifolio)) : the_row(); ?>
 							<li>
-							<div class="grid-8"><img src="<?php the_sub_field('portifolio_imagem1', $portifolio); ?>" alt="<?php the_sub_field('portifolio_imagem_descicao1', $portifolio); ?>"></div>
+							<div class="grid-8"><img src="<?php the_sub_field('portifolio_imagem1', $portifolio); ?>" alt="<?php the_sub_field('portfolio_imagem_descricao1', $portifolio); ?>"></div>
 							<div class="grid-8"><img src="<?php the_sub_field('portifolio_imagem2', $portifolio); ?>" alt="<?php the_sub_field('portifolio_imagem_descicao2', $portifolio); ?>"></div>
 							<div class="grid-16"><img src="<?php the_sub_field('portifolio_imagem3', $portifolio); ?>" alt="<?php the_sub_field('portifolio_imagem_descicao3', $portifolio); ?>"></div>
 						</li>
